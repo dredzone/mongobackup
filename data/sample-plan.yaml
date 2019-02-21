@@ -1,0 +1,24 @@
+backup:
+  # number of backups to keep locally
+  retention: 1
+target:
+  # operation timeout in seconds
+  timeout: 180
+  # mongod IP or host name
+  host: "localhost"
+  # mongodb port
+  port: 27017
+  # mongodb database name, leave blank to backup all databases
+  database: ""
+  # leave blank if auth is not enabled
+  username: ""
+  password: ""
+# Email notifications
+smtp:
+  server: ""
+  port: 0
+  username: ""
+  password: ""
+  from: ""
+  to:
+    - joetester@test.test
